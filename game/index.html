@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Night Vault — a top-down stealth heist</title>
+<style>
+  html, body {
+    margin: 0; padding: 0; height: 100%;
+    background: #0a0e18;
+    display: flex; align-items: center; justify-content: center;
+    font-family: "Segoe UI", system-ui, sans-serif;
+  }
+  #wrap { text-align: center; }
+  canvas {
+    background: #131b2e;
+    border: 2px solid #2b3a5c;
+    border-radius: 8px;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.6);
+    max-width: 96vw; height: auto;
+  }
+  #hint {
+    color: #8fa3c8; font-size: 13px; margin-top: 8px; letter-spacing: 0.02em;
+  }
+  #hint b { color: #d7e3ff; font-weight: 600; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="960" height="640"></canvas>
+  <div id="hint">
+    <b>WASD / Arrows</b> move &nbsp;·&nbsp; <b>Shift</b> sneak &nbsp;·&nbsp;
+    <b>Click</b> throw coin &nbsp;·&nbsp; <b>R</b> restart floor &nbsp;·&nbsp;
+    <b>P</b> pause &nbsp;·&nbsp; <b>M</b> mute
+  </div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
